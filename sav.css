@@ -1,0 +1,318 @@
+body{
+    margin: 0%;
+}
+header{
+    height: 15vh;
+    background-color: black;
+}
+.header{
+    height: 63%;
+    width: 100%;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+.logo{
+    height: 65%;
+    padding: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.logo-title{
+    padding-left: 3.5%;
+    padding-bottom: .5%;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #cbcbcb;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Normal', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #121212;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 350px;
+    border-radius: 12px;
+}
+
+.dropdown li {
+    padding: 15px;
+    font-family: 'Franklin Gothic Normal', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown li a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #e4e3e3;
+    width: 100%;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+    z-index: 1;
+}
+
+/* Second-Level Dropdown (Submenu) */
+.submenu {
+    position: absolute;
+    left: 100%; /* Moves the submenu to the right */
+    background-color: #ffffff;
+    list-style: none;
+    display: none;
+    min-width: 200px;
+    min-height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.submenu li {
+    padding: 15px;
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #777;
+}
+
+/* Show submenu when hovering over a category */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* Smooth transitions */
+.dropdown, .submenu {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-item:hover .dropdown,
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* end navbar */
+
+/* bodycontainer */
+
+.bodycontainer{
+    height: 100%;
+    width: 100%;
+}
+.bgimg{
+    height: 110vh;
+    width: 100%;
+    background-position:0cqmax;
+    background-size: contain;
+    filter: opacity(50%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+.logo2{
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    margin-top: 15%;
+    margin-left: -52%;
+}
+.dur{
+    position:absolute;
+    margin-top: -32%;
+    margin-left: 36%;
+    font-size: 4rem;
+    font-weight: 90;
+}
+.ts{
+    position: absolute;
+    margin-top: -27%;
+    margin-left: 48%;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.ps{
+    position: absolute;
+    margin-top: -21%;
+    margin-left: 33.5%;
+    font-size:large;
+}
+.btns{
+    position: absolute;
+    background-color: #0078D6;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    z-index: 1;
+    height: 60px;
+    width: 180px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 40%;
+    margin-left: -53.5%;
+}
+.btns:hover{
+    background-color: #1195fb;
+}
+
+
+/* footer */
+footer {
+    padding: 40px;
+    background-color: black;
+    margin-top: -0.4%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+
+}
+
+.footer-column {
+    flex: 1;
+    margin-left: 20px;
+    position: relative;
+
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: -40px;
+    position: relative;
+
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+
+
+}
+
+.social-icons a {
+    margin-right: 15px; /* Augmente l'espacement entre les icônes /
+    color: #fff;
+}
+
+.social-icons a:last-child {
+    margin-right: 0; / Supprime l'espacement après la dernière icône */
+}
+
+.fb:hover{
+    color: #0078d6;
+}
+
+.ytb:hover{
+    color: red;
+}
+
+.ig:hover{
+    color: #b200d6;
+}
+
+.lkd:hover{
+    color: #0078d6;
+}
